@@ -1,0 +1,13 @@
+DROP DATABASE empresa;
+DROP DATABASE test;
+
+DROP USER 'croja'@'localhost';
+DROP USER 'amartinez'@'%';
+DROP USER 'ngomez'@'localhost';
+DROP USER 'sestrada'@'192.168.30.20';
+DROP USER 'Aforero'@'localhost';
+
+
+SHOW DATABASES;
+SELECT User, Host FROM mysql.user;
+

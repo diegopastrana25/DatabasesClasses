@@ -1,0 +1,55 @@
+
+
+1. Ingresar a la consola de Mysql y utilizar los comandos CREATE USER Y GRANT crear una
+cuenta de usuario y asignar los privilegios indicados para cada uno de los siguientes casos:
+
+a) nombre usuario: crojas
+contraseña: cl4v31
+acceso: desde el equipo donde está el servidor Mysql privilegios: todos, para las tablas de la base
+de datos empresa.
+
+ 
+b) nombre usuario: amartinez
+contraseña: 4m4rt1n3z
+acceso: desde cualquier equipo privilegios: create, select, insert, para todas las bases de datos.
+ 
+ 
+c) nombre usuario: ngomez contraseña:
+ng0m3z
+acceso: desde el equipo donde está el servidor Mysql privilegios: select,
+solamente para la tabla empleados de la base de datos empresa
+
+ 
+d) nombre usuario: sestrada contraseña:
+s3str4da acceso: desde el equipo con
+dirección IP 192.168.30.20 privilegios:
+alter, para la base de datos test
+
+ 
+
+e) nombre usuario: pperdomo
+contraseña: 123456.
+acceso: desde el equipo donde está el servidor Mysql
+Privilegios:
+SELECT en la tabla empleado de la base de datos empresa
+INSERT en la tabla departamento de la base de datos de empresa
+
+ 
+f) nombre usuario: Aforero
+contraseña: 4f9r4r0
+acceso: desde el equipo donde está el servidor Mysql
+privilegios: Comandos DML para la Base de datos TEST.
+
+ 
+2. Realizar las siguientes acciones sobre las cuentas creadas en el punto 1.
+a) Revocar el privilegio CREATE al usuario amartinez.
+
+ 
+b) Cambiarle la contraseña al usuario ngomez. Asignale
+“nuevagomez”.
+
+  
+c) Eliminar la cuenta de usuario de pperdomo
+
+ 
+
