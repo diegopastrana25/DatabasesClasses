@@ -1,0 +1,5 @@
+﻿Crea una base datos llamada actividad 1 con una tabla de alumnos.
+
+Inserta 3 registros.
+
+Crea dos usuarios gestor con todos los privilegios de lectura, insert, modificar y borrar registros y otro usuario lector con los privilegios de solo lectura.
