@@ -1,0 +1,56 @@
+﻿Opera con los permisos solicitados para cada usuario e incluye captura de pantalla del final del proceso que has realizado.
+
+1. Usuario ‘mgarcia’. (3 puntos)
+
+a) Crea un usuario llamado 'mgarcia' con acceso desde cualquier equipo, y dale permisos para insertar (INSERT) y actualizar (UPDATE) en la tabla 'clientes' de la base de datos 'ventas'.
+
+ 
+create user "mgarcia"@"%" identified by "contraseña";
+grant insert, update on ventas.clientes to "mgarcia"@"%";
+
+
+b) Revoca el permiso de 'INSERT' al usuario 'mgarcia' en la tabla 'clientes' de la base de datos 'ventas'.
+
+revoke insert on ventas.clientes from "mgarcia"@"%";
+
+c) Elimina la cuenta de usuario 'mgarcia'.
+ 
+drop user "mgarcia"@"%";
+
+2. Usuario ‘jperez’ (3 puntos)
+
+a) Crea un usuario llamado 'jperez' con contraseña 'jP03_2024', que solo pueda acceder desde el equipo local. Otorgarle permisos de selección (SELECT) sobre la base de datos 'empresa'.
+
+
+create user "jperez"@"localhost" identified by "jP03_2024";
+grant select on empresa.* to "jperez"@"localhost";
+
+
+b) Cambia la contraseña del usuario 'jperez' a 'nuevaClave2024'.
+
+set password for "jperez"@"localhost" = "nuevaClave2024";
+
+c) Revoca todos los privilegios otorgados al usuario 'jperez'.
+
+revoke all privileges on *.* from "jperez"@"localhost";
+
+3. Usuario ‘rlopez’ (4 puntos)
+
+a) Crea un usuario llamado 'rlopez' con acceso desde el equipo local y otórgale permisos para crear tablas en la base de datos 'proyectos'.
+
+grant create on proyectos.* to "rlopez"@"localhost";
+
+b) Otorga permisos de selección (SELECT) y actualización (UPDATE) en todas las tablas de la base de datos 'inventario' al usuario 'rlopez'.
+
+
+grant select, update on inventario.* to "rlopez"@"localhost";
+
+c) Revoca el permiso de 'UPDATE' al usuario 'rlopez' en la base de datos 'inventario'.
+
+ 
+revoke update on inventario.* from "rlopez"@"localhost";
+
+d) Elimina la cuenta de usuario ‘rlopez’
+ 
+ 
+drop user "rlopez"@"localhost";
